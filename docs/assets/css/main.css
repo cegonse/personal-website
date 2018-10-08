@@ -1815,6 +1815,11 @@ input, select, textarea {
 			text-transform: none !important;
 		}
 
+		.icon > img {
+			width: 2.65em;
+			height: 2.65em;
+		}
+
 		.icon > .label {
 			display: none;
 		}
