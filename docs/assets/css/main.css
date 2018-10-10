@@ -1804,6 +1804,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000;
 	}
 
 		.icon:before {
@@ -2547,6 +2548,11 @@ input, select, textarea {
 
 /* Tiles */
 
+	.tile_text {
+		text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000;
+		font-weight: bold;
+	}
+
 	.tiles {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2556,7 +2562,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
