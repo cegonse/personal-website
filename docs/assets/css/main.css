@@ -2431,6 +2431,14 @@ input, select, textarea {
 		padding: 0;
 	}
 
+	.screenshot {
+		width: 80%;
+	}
+
+	iframe {
+		width: 80%;
+	}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
