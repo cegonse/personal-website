@@ -21,9 +21,7 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<!--<span class="symbol"><img src="images/logo.svg" alt="" /></span>--><span class="title">CG SEGURA</span>
-								</a>
+
 
 							<!-- Nav -->
 								<nav>
@@ -49,25 +47,179 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>Hi, I'm César González.<br />
-								These are some of the things I've been doing.</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
+								<h1>Hi, I'm César González</h1>
+								<p>
+									I'm a software developer from Valencia, Spain and this is my portfolio. I graduated on communication engineering and
+									right now I work as a software engineer at <a href="http://www.casa-systems.com/">Casa Systems</a>, developing next-gen 
+									mobile broadband solutions. I have worked on computational genomics and game development in the past, and I keep a great
+									interest on both.
+								</p>
+								<p>
+									My main interests are embedded and low level software development, feeling the most confortable as close to the hardware
+									as possible. I also enjoy tool development, where I try to contribute to the open source scene, and videogame development, 
+									which I do in my spare time as a hobby.
+								</p>
+								<p>
+									Following is some of my recent work, and the work I'm most fond of. I hope you can make good use of it, and don't hesitate
+									to <a href="#contact">contact me</a> if you have any question.
+								</p>
 							</header>
-							<h2>Software</h2>
-							<h2>Research</h2>
-							<h2>Games</h2>
+							<h2 id="research">Research</h2>
+							<section>
+								<p>
+									These are the most relevant research results from my time working in the <a href="http://grev.uv.es/">GREV research group</a>
+									at the University of Valencia. The research was focused on DNA read mapping, methylation and hydroximethylation analysis
+									for cancer research and diagnosis, in tandem with the medical institute <a href="https://www.incliva.es/">INCLIVA</a>.
+									Besides this, there is also the research results from my Bs. C. thesis in computer graphics, where I worked on finding novel
+									methods for improving terrain rendering performance.
+								</p>
+								<div class="table-wrapper">
+										<table>
+											<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description / Publisher</th>
+														<th>Link / DOI</th>
+													</tr>
+												</thead>
+											<tbody>
+												<tr>
+													<td>
+														On the Use of Binary Trees for DNA Hydroxymethylation Analysis
+													</td>
+													<td>
+														Springer International Conference on Algorithms and Architectures for Parallel Processing
+													</td>
+													<td>
+														<a href="https://doi.org/10.1007/978-3-319-65482-9_37">https://doi.org/10.1007/978-3-319-65482-9_37</a>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														HPG-Methyl
+													</td>
+													<td>
+														An ultrafast and highly sensitive Next-Generation Sequencing (NGS) read mapper and methylation extractor
+													</td>
+													<td>
+														<a href="https://github.com/grev-uv/hpg-methyl">Source code and binaries</a>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														HPG-Hmapper
+													</td>
+													<td>
+														A parallel software tool for analyzing DNA hydroximethylation data
+													</td>
+													<td>
+														<a href="https://github.com/grev-uv/hpg-hmapper">Source code and binaries</a>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Combining displacement mapping methods on the GPU for real-time terrain visualization
+													</td>
+													<td>
+														Springer Journal of Supercomputing
+													</td>
+													<td>
+														<a href="https://doi.org/10.1007/s11227-016-1869-6">https://doi.org/10.1007/s11227-016-1869-6</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+							</section>
+
+							<h2 id="software">Software</h2>
+							<section>
+								<p>
+									These are some of the open source software I've published over the years. All of them are GPL, LGPL or BSD licensed
+									so feel free to use and modify anything you find useful.
+								</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+										<tbody>
+											<tr>
+												<td>
+													<a href="https://github.com/cegonse/parallax-terrain-renderer">Parallax Terrain Renderer</a>
+												</td>
+												<td>
+													A terrain rendering engine using OpenGL and combining tessellation shaders with per-pixel displacement mapping techniques
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://github.com/cegonse/srtm2tiff">srtm2tiff</a>
+												</td>
+												<td>
+													Command-line converter for NASA HGT elevation files to TIFF
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://github.com/cegonse/terrain-normals">terrain-normals</a>
+												</td>
+												<td>
+													A tool to embed normal maps to terrain heightmaps
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://github.com/cegonse/grid-montecarlo">grid-montecarlo</a>
+												</td>
+												<td>
+													An application to do Montecarlo simulations on the Grid implemented with Node.js and Octave
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://github.com/cegonse/multiagentsystem">MultiAgentSystem</a>
+												</td>
+												<td>
+													A scalable multi-agent system developed using Node.js
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://github.com/cegonse/jacobi">Jacobi</a>
+												</td>
+												<td>
+													An implementation of the Jacobi iteration using MPI and OpenMP
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+							
+							<h2 id="games">Games</h2>
+							<section>
+								<p>
+									Here are some of the games I've worked on as a programmer together with other people in charge of graphics, level design
+									and music. The main platforms I've worked on are Android and HTML5 using Unity3D, but recently I'm also moving towards
+									game development for retro platforms like the SEGA Mega Drive and the SEGA Dreamcast.
+								</p>
+							</section>
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
 										<img src="images/toe.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="toe.html">
 										<h2>Tower of Elements</h2>
 										<div class="content">
 											<p class="tile_text">Learn to control magic to climb to the top of the tower of elements in this puzzle-platformer.<br />
-											<span class="icon fa-android"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-											<span class="icon fa-windows"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-											<span class="icon fa-html5"></span></p>
+											<span class="icon style3 fa-android"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+											<span class="icon style3 fa-windows"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+											<span class="icon style3 fa-html5"></span></p>
 										</div>
 									</a>
 								</article>
@@ -75,11 +227,11 @@
 									<span class="image">
 										<img src="images/ctp_jam.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="ctpjam.html">
 										<h2>Capture the Pixel (LowRezJam '16)</h2>
 										<div class="content">
 											<p class="tile_text">A fast-paced multiplayer shooter arena in 64x64 pixels.<br />
-											<span class="icon fa-windows"></p>
+											<span class="icon style3 fa-windows"></p>
 										</div>
 									</a>
 								</article>
@@ -87,11 +239,11 @@
 									<span class="image">
 										<img src="images/starship.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="galaxy.html">
 										<h2>Galaxy Survivor</h2>
 										<div class="content">
 											<p class="tile_text">Travel to the end of the universe and catch as many stars as possible.<br />
-											<span class="icon fa-android"></p>
+											<span class="icon style3 fa-android"></p>
 										</div>
 									</a>
 								</article>
@@ -99,11 +251,11 @@
 									<span class="image">
 										<img src="images/ctp.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="ctp.html">
 										<h2>Capture the Pixel</h2>
 										<div class="content">
 											<p class="tile_text">A remake of the jam game, for mobile devices.<br />
-											<span class="icon fa-android"></p>
+											<span class="icon style3 fa-android"></p>
 										</div>
 									</a>
 								</article>
@@ -111,12 +263,12 @@
 									<span class="image">
 										<img src="images/rampage.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="rampage.html">
 										<h2>Rampage of Technology<br />(LD 36)</h2>
 										<div class="content">
 											<p class="tile_text">Go back to the past and scape from the hipster!<br />
-											<span class="icon fa-windows">&nbsp;&nbsp;&nbsp;&nbsp;
-											<span class="icon fa-html5"></p>
+											<span class="icon style3 fa-windows">&nbsp;&nbsp;&nbsp;&nbsp;
+											<span class="icon style3 fa-html5"></p>
 										</div>
 									</a>
 								</article>
@@ -124,12 +276,12 @@
 									<span class="image">
 										<img src="images/spookie.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="spookie.html">
 										<h2>Spookie Boogie (GGJ '15)</h2>
 										<div class="content">
 											<p class="tile_text">Play the role of a ghost in a haunted house full of unsuspecting people.<br />
-											<span class="icon fa-android">&nbsp;&nbsp;&nbsp;&nbsp;
-											<span class="icon fa-html5"></p>
+											<span class="icon style3 fa-android">&nbsp;&nbsp;&nbsp;&nbsp;
+											<span class="icon style3 fa-html5"></p>
 										</div>
 									</a>
 								</article>
@@ -137,11 +289,11 @@
 									<span class="image">
 										<img src="images/spinnerio.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="spinnerio.html">
 										<h2>Spinner.IO</h2>
 										<div class="content">
-											<p class="tile_text">Destroy all the spinners before they destroy you.<br />
-											<span class="icon fa-android"></p>
+											<p class="tile_text">Destroy all the fidget spinners before they destroy you.<br />
+											<span class="icon style3 fa-android"></p>
 										</div>
 									</a>
 								</article>
@@ -149,11 +301,11 @@
 									<span class="image">
 										<img src="images/dcjam.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="dreamcrawler.html">
 										<h2>DreamCrawler (DCJam '16)</h2>
 										<div class="content">
-											<p class="tile_text">A 3D tech demo to understand SEGA Dreamcast development.<br />
-											<span class="icon"><img src="images/dreamcast_logo.svg"></span></p>
+											<p class="tile_text">A third person 3D tech demo for the SEGA Dreamcast.<br />
+											<span class="icon style3"><img src="images/dreamcast_logo.svg"></span></p>
 										</div>
 									</a>
 								</article>
@@ -161,11 +313,11 @@
 									<span class="image">
 										<img src="images/rabibbi.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="rabbibi.html">
 										<h2>Rabbibi's Adventure</h2>
 										<div class="content">
 											<p class="tile_text">An adventure RPG tech demo for the SEGA Mega Drive.<br />
-											<span class="icon"><img src="images/md_logo.svg"></span></p>
+											<span class="icon style3"><img src="images/md_logo.svg"></span></p>
 										</div>
 									</a>
 								</article>
@@ -177,12 +329,13 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Get in touch</h2>
+								<h2 id="contact">Get in touch</h2>
 								<ul class="icons">
-									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon style2 fa-telegram"><span class="label">Telegram</span></a></li>
+									<li><a href="mailto:cegonse@gmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+									<li><a href="https://github.com/cegonse" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/andoba12" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="http://telegram.me/cegonse" class="icon style2 fa-telegram"><span class="label">Telegram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/cesar-gonzalez-segura/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
