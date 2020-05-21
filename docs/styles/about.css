@@ -1,0 +1,78 @@
+/* about-pannel */
+
+.about-panel-common {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-width: 1mm;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    border-bottom-color: rgb(231, 231, 231);
+    border-bottom-width: 0.25mm;
+    border-bottom-style: solid;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.about-panel {
+    height: 9cm;
+}
+
+@media all and (orientation: portrait) {
+    .about-panel {
+        height: 18cm;
+    }
+}
+
+/* about-photo */
+
+.about-photo-common {
+    border-radius: 50%;
+    border-width: 1mm;
+    border-style: groove;
+}
+
+.about-photo {
+    width: 4cm;
+    height: auto;
+}
+
+@media all and (orientation: portrait) {
+    .about-photo {
+        width: 8cm;
+        height: auto;
+    }
+}
+
+
+/* about-name */
+
+.about-name {
+    font-size: 3em;
+    margin-top: 0.25em;
+    margin-bottom: 0;
+}
+
+@media all and (orientation: portrait) {
+    .about-name {
+        font-size: 6em;
+    }
+}
+
+/* about-title */
+
+.about-title-common {
+    color: rgb(80, 80, 80);
+    margin-bottom: 0;
+}
+
+.about-title {
+    font-size: 2.5em;
+    margin-top: 0em;
+}
+
+@media all and (orientation: portrait) {
+    .about-title {
+        font-size: 6em;
+    }
+}
