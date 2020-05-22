@@ -65,6 +65,14 @@
     cursor: pointer;  
 }
 
+@media all and (orientation: portrait) {
+    .intro-contact-panel-item {
+        font-size: 2em;
+    }
+}
+
+/* intro-contact-panel-item-icon */
+
 .intro-contact-panel-item-icon {
     padding-right: 0.5em;
 }

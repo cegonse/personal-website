@@ -23,7 +23,6 @@
     }
 }
 
-
 /* header-name */
 
 .header-name-common {
@@ -85,5 +84,47 @@
         margin-left: auto;
         margin-right: 1em;
         cursor: pointer;
+    }
+}
+
+/* header-mobile-panel */
+
+.header-mobile-panel {
+    visibility: hidden;
+    display: none;
+}
+
+@media all and (orientation: portrait) {
+    .header-mobile-panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        font-family: 'Open Sans Condensed', sans-serif;
+        visibility: visible;
+    }
+}
+
+
+/* header-mobile-item */
+
+.header-mobile-item {
+    visibility: hidden;
+}
+
+@media all and (orientation: portrait) {
+    .header-mobile-item {
+        padding: 1em;
+        visibility: visible;
+        font-size: 4em;
+        margin: 0;
+        padding: 0.5em;
+        
+        border-bottom-color: rgb(212, 212, 212);
+        border-bottom-width: 1mm;
+        border-bottom-style: solid;
+
+        border-top-color: rgb(212, 212, 212);
+        border-top-width: 1mm;
+        border-top-style: solid;
     }
 }
