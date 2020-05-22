@@ -2,4 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0em;
     margin: 0em;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
