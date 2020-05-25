@@ -29,6 +29,14 @@
     margin-left: 1em;
 }
 
+.header-name-common:hover {
+    background-color: rgb(243, 243, 243);
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
 .header-name {
     font-size: 1.5em;
 }

@@ -1,0 +1,122 @@
+/* software-intro */
+
+.software-intro-common {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1cm;
+    background-color: rgb(247, 247, 247);
+    border-bottom-width: 1mm;
+    border-bottom-color: rgb(231, 231, 231);
+    border-bottom-width: 0.25mm;
+    border-bottom-style: solid;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.software-intro {
+    height: 4cm;
+}
+
+@media all and (orientation: portrait) {
+    .software-intro {
+        height: 13cm;
+        padding-bottom: 1cm;
+    }
+
+    .software-intro > h1 {
+        font-size: 6em;
+    }
+
+    .software-intro > p {
+        font-size: 3em;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+/* software-section */
+
+.software-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+/* software-article */
+
+.software-article-common {
+    margin: 1em;
+    background-color: rgb(247, 247, 247);
+    border-radius: 1cm;
+    border-color: rgb(231, 231, 231);
+    border-style: solid;
+    border-width: 0.25mm;
+}
+
+.software-article {
+    width: 50%;
+}
+
+@media all and (orientation: portrait) {
+    .software-article {
+        width: 90%;
+    }
+}
+
+.software-article > h1 {
+    padding-left: 0.5cm;
+}
+
+.software-article > h3 {
+    padding-left: 0.5cm;
+}
+
+.software-article > a {
+    padding-left: 0.5cm;
+    color: rgb(105, 79, 255);
+}
+
+.software-article > p {
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* software-article-technologies */
+
+.software-article-technologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.software-article-technologies > span {
+    margin-left: 0.5cm;
+    margin-bottom: 0.5cm;
+    padding-top: 0.125cm;
+    padding-bottom: 0.125cm;
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
+    background-color: rgb(203, 255, 198);
+    border-width: 0.25mm;
+    border-style: solid;
+    border-radius: 1cm;
+    border-color: rgb(157, 250, 149)
+}
+
+@media all and (orientation: portrait) {
+    .software-article-technologies > span {
+        font-size: 2em;
+    }
+}

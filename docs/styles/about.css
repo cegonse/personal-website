@@ -5,9 +5,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom-width: 1mm;
     width: 100%;
     background-color: rgb(247, 247, 247);
+    border-bottom-width: 1mm;
     border-bottom-color: rgb(231, 231, 231);
     border-bottom-width: 0.25mm;
     border-bottom-style: solid;

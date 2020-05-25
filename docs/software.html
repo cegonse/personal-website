@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/header.css">
+        <link rel="stylesheet" type="text/css" href="styles/software.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a65f568dc8.js" crossorigin="anonymous"></script>
+        <script src="src/main.js"></script>
+        <title>Cesar Gonzalez Segura</title>
+    </head>
+    <body>
+        <header class="header-panel header-panel-common">
+            <a href="index.html" class="header-name header-name-common">CESAR GONZALEZ SEGURA</a>
+            <a href="software.html" class="header-item header-item-first header-item-common">SOFTWARE</a>
+            <p class="header-item header-item-common">CAREER</p>
+            <p class="header-item header-item-common">PUBLICATIONS</p>
+            <p class="header-item header-item-common">GAMES</p>
+            <i id="mobile-menu" class="header-menu fas fa-bars"></i>
+        </header>
+        <header id="mobile-header" class="hidden header-mobile-panel">
+            <a href="software.html" class="hidden header-mobile-item">SOFTWARE</a>
+            <p class="hidden header-mobile-item">CAREER</p>
+            <p class="hidden header-mobile-item">PUBLICATIONS</p>
+            <p class="hidden header-mobile-item">GAMES</p>
+        </header>
+        <div class="software-intro software-intro-common">
+            <h1>Software</h1>
+            <p>Here you can find a collection of the open source software I have been building on over the years, either on jobs where the products were open source or in my personal time.</p>
+        </div>
+        <section class="software-section">
+            <article class="software-article software-article-common">
+                <h1>Cest Framework</h1>
+                <a href="https://cestframework.com/" target="_blank">https://cestframework.com/</a>
+                <p>Cest is a test framework for C++ focused on simplicity and readability. Inspired by mainstream frameworks like Jest, Jasmine and RSpec, tries to bring simple TDD to C and C++.</p>
+                <p>Cest supports behaviour-driven feature tests, exception handling and JUnit XML export for Gitlab CI. Property based tests, parametrized tests and other features are in the works.</p>
+                <h3>Status</h3>
+                <p>Active Development</p>
+                <h3>Technologies</h3>
+                <div class="software-article-technologies">
+                    <span>TDD</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                    <span>Docker</span>
+                    <span>HTML</span>
+                    <span>Github CI/CD</span>
+                </div>
+            </article>
+            <article class="software-article software-article-common">
+                <h1>HPG HMapper</h1>
+                <a href="https://github.com/grev-uv/hpg-hmapper" target="_blank">https://github.com/grev-uv/hpg-hmapper</a>
+                <p>HPG HMapper is a parallel software tool for analyzing DNA hydroximethylation data.</p>
+                <p>Providing two BAM datasets, one generated through bisulphite sequencing (BS-seq) with 5mC information and other generated through TET1 traslocation BS-sequencing (TAB-seq) with 5hmC data, HPG-Hmapper detects and maps the methylated and hydroxymethylated regions.</p>
+                <p>As a result, CSV files with a list of all the detected cytosines featuring relevant information and its methylation are created per-chromosome, including hydroxymethylation, mutation and coverage information.</p>
+                <h3>Status</h3>
+                <p>Under Mainteinance</p>
+                <h3>Technologies</h3>
+                <div class="software-article-technologies">
+                    <span>Computational Genomics</span>
+                    <span>DNA Analysis</span>
+                    <span>OpenMP</span>
+                    <span>Parallel Computing</span>
+                </div>
+            </article>
+            <article class="software-article software-article-common">
+                <h1>HPG Methyl</h1>
+                <a href="https://github.com/grev-uv/hpg-methyl" target="_blank">https://github.com/grev-uv/hpg-methyl</a>
+                <p>HPG Methyl is an ultrafast and highly sensitive Next-Generation Sequencing (NGS) read mapper and methylation extractor.</p>
+                <p>Compared with other current mapping and methylation extraction tools, HPG-Methyl offers better sensitivity and shorter execution times even for long reads.</p>
+                <p>Since the files generated by HPG-Methyl are fully compatible with the files generated by other popular tools, it can be used as a drop-in replacement to accelerate existing methylation analysis pipelines.</p>
+                <h3>Status</h3>
+                <p>Under Mainteinance</p>
+                <h3>Technologies</h3>
+                <div class="software-article-technologies">
+                    <span>Computational Genomics</span>
+                    <span>DNA Analysis</span>
+                    <span>OpenCB</span>
+                    <span>Parallel Computing</span>
+                </div>
+            </article>
+            <article class="software-article software-article-common">
+                <h1>Parallax Terrain Renderer</h1>
+                <a href="https://github.com/cegonse/parallax-terrain-renderer" target="_blank">https://github.com/cegonse/parallax-terrain-renderer</a>
+                <p>A terrain rendering engine using OpenGL and combining tessellation shaders with per-pixel displacement mapping techniques that I developed as my Bs. C. final project.</p>
+                <p>The solution includes a 3D terrain viewing application, a terrain project editor and a testing application to evaluate the performance of the rendering engine.</p>
+                <p>It makes use of OpenGL 4.3, tessellation and geometry shaders and combines them with per-pixel displacement mapping techniques based on parallax mapping, binary searches and linear searches.</p>
+                <h3>Status</h3>
+                <p>Frozen</p>
+                <h3>Technologies</h3>
+                <div class="software-article-technologies">
+                    <span>C++</span>
+                    <span>OpenGL 4</span>
+                    <span>GIS</span>
+                    <span>Real-time Graphics</span>
+                    <span>Tessellation Shaders</span>
+                </div>
+            </article>
+            <article class="software-article software-article-common">
+                <h1>srtm2tiff</h1>
+                <a href="https://github.com/cegonse/srtm2tiff" target="_blank">https://github.com/cegonse/srtm2tiff</a>
+                <p>srtm2tiff is an open-source command line tool to convert NASA HGT elevation files from the SRTM Shuttle radar mission to TIFF raster files.</p>
+                <h3>Status</h3>
+                <p>Frozen</p>
+                <h3>Technologies</h3>
+                <div class="software-article-technologies">
+                    <span>C#</span>
+                    <span>GIS</span>
+                    <span>HGT</span>
+                </div>
+            </article>
+            <article class="software-article software-article-common">
+                <h1>TerrainNormals</h1>
+                <a href="https://github.com/cegonse/terrain-normals" target="_blank">https://github.com/cegonse/terrain-normals</a>
+                <p>An application to embed normal maps into terrain heightmaps.</p>
+                <p>For each sample, the normal vector of the surface composed by the current sample and its four adjacent samples is obtained. Then, the four vectors are averaged and normalized to estimate the normal vector at the sample.</p>
+                <p>TerrainNormals can be launched with a Graphical User Interface or in batch mode.</p>
+                <h3>Status</h3>
+                <p>Frozen</p>
+                <h3>Technologies</h3>
+                <div class="software-article-technologies">
+                    <span>C#</span>
+                    <span>OpenGL</span>
+                    <span>GIS</span>
+                </div>
+            </article>
+        </section>
+        <footer class="footer-pannel footer-pannel-common">
+            <p class="footer-text">&copy; César González Segura 2020</p>
+        </footer>
+    </body>
+</html>

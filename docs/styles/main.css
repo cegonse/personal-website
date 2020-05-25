@@ -14,3 +14,7 @@ a {
     visibility: hidden;
     display: none;
 }
+
+html.wf-loading * {
+    opacity: 0;
+}

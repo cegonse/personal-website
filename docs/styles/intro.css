@@ -29,6 +29,11 @@
 
 /* intro-about-panel */
 
+.intro-about-panel-common {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .intro-about-panel {
     width: 30%;
     margin-left: 10%;
