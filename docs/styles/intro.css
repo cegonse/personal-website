@@ -63,7 +63,8 @@
 /* intro-contact-panel-item */
 
 .intro-contact-panel-item {
-    margin-left: 0.25em;
+    margin-top: 0.5cm;
+    font-size: 1.25em;
 }
 
 .intro-contact-panel-item:hover {
@@ -72,18 +73,19 @@
 
 @media all and (orientation: portrait) {
     .intro-contact-panel-item {
-        font-size: 2em;
+        font-size: 3em;
+        margin-top: 1cm;
     }
 }
 
 /* intro-contact-panel-item-icon */
 
 .intro-contact-panel-item-icon {
-    padding-right: 0.5em;
+    padding-right: 0.25cm;
 }
 
 @media all and (orientation: portrait) {
     .intro-contact-panel-item-icon {
-        padding-right: 3em;
+        padding-right: 1cm;
     }
 }

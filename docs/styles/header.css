@@ -8,18 +8,19 @@
     border-bottom-width: 1mm;
     width: 100%;
     border-bottom-color: rgb(231, 231, 231);
-    border-bottom-width: 0.25mm;
     border-bottom-style: solid;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .header-panel {
     height: 1.5cm;
+    border-bottom-width: 0.25mm;
 }
 
 @media all and (orientation: portrait) {
     .header-panel {
         height: 4cm;
+        border-bottom-width: 0.5mm;
     }
 }
 

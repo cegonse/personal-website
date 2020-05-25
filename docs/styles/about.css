@@ -9,17 +9,18 @@
     background-color: rgb(247, 247, 247);
     border-bottom-width: 1mm;
     border-bottom-color: rgb(231, 231, 231);
-    border-bottom-width: 0.25mm;
     border-bottom-style: solid;
 }
 
 .about-panel {
     height: 9cm;
+    border-bottom-width: 0.25mm;
 }
 
 @media all and (orientation: portrait) {
     .about-panel {
         height: 18cm;
+        border-bottom-width: 1mm;
     }
 }
 
