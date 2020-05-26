@@ -22,7 +22,6 @@
 @media all and (orientation: portrait) {
     .intro-panel-header {
         font-size: 5em;
-        margin-top: 0em;
         margin-bottom: 0.5em;
     }
 }
@@ -44,6 +43,10 @@
     .intro-about-panel {
         width: 90%;
         margin: 2em;
+    }
+
+    .intro-about-panel > p{
+        padding-top: 1cm;
     }
 }
 
