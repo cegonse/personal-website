@@ -94,6 +94,16 @@
     text-justify: inter-word;
 }
 
+@media all and (orientation: portrait) {
+    .software-article > h1 {
+        padding-bottom: 1cm;
+    }
+
+    .software-article > h3 {
+        padding-top: 1cm;
+    }
+}
+
 /* software-article-technologies */
 
 .software-article-technologies {
@@ -122,5 +132,38 @@
 @media all and (orientation: portrait) {
     .software-article-technologies > span {
         font-size: 2em;
+    }
+}
+
+/* software-active */
+
+.software-active {
+    color: rgb(0, 124, 31);
+}
+
+/* software-mainteinance */
+
+.software-mainteinance {
+    color: rgb(0, 63, 158);
+}
+
+/* software-frozen */
+
+.software-frozen {
+    color: rgb(150, 115, 0);
+}
+
+@media all and (orientation: portrait) {
+    .software-active > i {
+        padding-right: 1cm;
+    }
+
+    .software-mainteinance > i {
+        padding-right: 1cm;
+    }
+
+    .software-frozen > i {
+        padding-right: 1cm;
+
     }
 }
