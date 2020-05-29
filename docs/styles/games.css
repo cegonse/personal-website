@@ -1,0 +1,155 @@
+/* games-intro */
+
+.games-intro-common {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1cm;
+    background-color: rgb(247, 247, 247);
+    border-bottom-width: 1mm;
+    border-bottom-color: rgb(231, 231, 231);
+    border-bottom-style: solid;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.games-intro {
+    height: 5cm;
+    border-bottom-width: 0.25mm;
+}
+
+.games-intro > p {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+@media all and (orientation: portrait) {
+    .games-intro {
+        height: 16cm;
+        padding-bottom: 1cm;
+        border-bottom-width: 0.5mm;
+    }
+
+    .games-intro > h1 {
+        font-size: 6em;
+    }
+
+    .games-intro > p {
+        font-size: 3em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+
+/* games-section */
+
+.games-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+/* games-article */
+
+.games-article-common {
+    margin: 0.5cm;
+    padding: 0.25cm;
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(231, 231, 231);
+    border-style: solid;
+    border-width: 0.25mm;
+}
+
+.games-article {
+    width: 50%;
+    border-radius: 0.25cm;
+}
+
+@media all and (orientation: portrait) {
+    .games-article {
+        width: 90%;
+        border-radius: 1cm;
+        margin-top: 1.5cm;
+    }
+}
+
+.games-article > h1 {
+    padding-left: 0.5cm;
+    text-align: center;
+}
+
+.games-article > h3 {
+    padding-left: 0.5cm;
+}
+
+.games-article > a {
+    padding-left: 0.5cm;
+    color: rgb(105, 79, 255);
+}
+
+.games-article > p {
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.games-article > h1 {
+    font-size: 2em;
+}
+
+@media all and (orientation: portrait) {
+    .games-article > h1 {
+        font-size: 4em;
+    }
+
+    .games-article > h3 {
+        padding-top: 1cm;
+    }
+
+    .games-article > p {
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+    }
+
+    i {
+        margin-right: 1cm;
+    }
+}
+
+/* games-article-screenshots */
+
+.games-article-screenshots {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.games-article-screenshot {
+    height: 4cm;
+    width: auto;
+    border-radius: 0.25cm;
+    margin: 0.5cm;
+}
+
+@media all and (orientation: portrait) {
+    .games-article-screenshots {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .games-article-screenshot {
+        height: auto;
+        width: 80%;
+        border-radius: 1cm;
+        margin: 0.5cm;
+        padding: 0;
+    }
+}
