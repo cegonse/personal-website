@@ -27,9 +27,11 @@ window.addEventListener('load', () => {
 })
 
 document.fonts.ready.then(() => {
-    const spinner = document.querySelector('#spinner')
-    const body = document.querySelector('body')
+    setTimeout(() => {
+        const spinner = document.querySelector('#spinner')
+        const body = document.querySelector('body')
 
-    toggleClass(spinner, 'fade-out')
-    toggleClass(body, 'no-scroll')
+        toggleClass(spinner, 'fade-out')
+        toggleClass(body, 'no-scroll')
+    }, 300)
 })
