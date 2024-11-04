@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <title>César González</title>
+    <meta charset="utf-8"/>
+    <style>
+      html {
+        color: rgb(236, 233, 230);
+        background-color: #1b2733;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      @media (orientation: landscape) {
+        header img {
+          height: 2em;
+          width: 2em;
+          border-radius: 50%;
+          margin-right: 1em;
+        }
+      }
+
+      @media (orientation: portrait) {
+        header h1 {
+          font-size: 4.5em;
+        }
+
+        header img {
+          height: 4.5em;
+          width: 4.5em;
+          border-radius: 50%;
+          margin-right: 2em;
+        }
+
+        section h2 {
+          font-size: 3em;
+        }
+
+        p {
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }
+      }
+
+      a {
+        color: rgb(179, 192, 255);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: rgb(206, 211, 238);
+        text-decoration: none;
+      }
+
+      @media (orientation: landscape) {
+        body {
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+
+        article {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+
+      @media (orientation: portrait) {
+        article {
+          padding-top: 2em;
+          padding-bottom: 2em;
+        }
+      }
+
+      article img {
+        height: 200px;
+        width: auto;
+        margin-right: 2em;
+        border-radius: 8px;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .contact img {
+        height: 2em;
+        margin-right: 1em;
+      }
+
+      .contact a:hover {
+        transform: scale(1.05);
+        filter: brightness(0.8)
+      }
+
+      @media (orientation: portrait) {
+        .contact img {
+          height: 4.5em;
+          margin-right: 3em;
+        }
+      }
+
+      footer {
+        width: 100%;
+        height: 4em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #263748;
+        border-radius: 32px;
+        font-size: 3em;
+      }
+    </style>
+  </header>
+  <body>
+    <header>
+      <img src="images/photo.webp" />
+      <h1>César González Segura</h1>
+    </header>
+
+    <div class="contact">
+      <a href="https://t.me/cegonse"><img src="images/telegram.webp"></a>
+      <a href="https://www.linkedin.com/in/cesar-gonzalez-segura/"><img src="images/linkedin.webp"></a>
+      <a href="mailto:contact@cesargonzalez.dev"><img src="images/email.webp"></a>
+      <a href="https://github.com/cegonse"><img src="images/github.webp"></a>
+    </div>
+
+    <section>
+      <h2>About me</h2>
+      <p>
+        Software developer. Experience with clean water hydraulic software, digital banking, videogames,
+        mobile communication systems and medical research software.
+      </p>
+      <p>If you want to get in touch with me, feel free to reach me in any of the contacts available at the top.</p>
+      <p>
+        I love enjoying videogames as a medium, whether it is playing them, creating them or learning about them. In the <a href="#games">games</a> section
+        you will find details about some of the games I have worked on.
+      </p>
+      <p>
+        Besides my day to day professional work, I am passionate about software crafting and I love to learn in my free time.
+        In the <a href="#software">software</a> section you can see some of the open source projects I have worked on during the years.
+      </p>
+      <p>
+        I also had the chance to do some scientific research at the beginning of my career. If you're curious, you'll find
+        it in the <a href="#research">research</a> section.
+      </p>
+    </section>
+
+    <section id="games">
+      <h2>Games</h2>
+      <p>I love creating games. It is the main reason I started learning how to write software, and one of my favourite hobbies.</p>
+      <p>Here is a collection of games I've had the chance to create or collaborate creating. Both professionally and as a hobbyst.</p>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/ksp1.webp" />
+        </div>
+        <div>
+          <h3>Kerbal Space Program Enhanced Edition</h3>
+          <p class="italic">Squad &ndash; Private Division &ndash; Blitworks</p>
+          <a href="https://store.playstation.com/en-us/product/UP1126-CUSA08199_00-KERBAL0EE0000000" target="_blank">Playstation Store</a><br />
+          <a href="https://www.microsoft.com/en-us/p/kerbal-space-program-enhanced-edition/brbd7bdk271p?activetab=pivot:overviewtab" target="_blank">Microsoft Store</a><br />
+          <a href="https://www.youtube.com/watch?v=0NSzBPxcTrA" target="_blank">YouTube Trailer</a>
+          <p>The widely known space career simulator, where you can create your own space ships, space stations and conquer the Kerbal system.</p>
+          <p>My main contribution was creating a PS5 and Xbox Series X/S port of KSP: EE.</p>
+          <p>Besides that, I worked in creating console-specific features, integrating new features from the PC version into the PS4 and XBox One versions and bug fixing.</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/zpiw1.webp" />
+        </div>
+        <div>
+          <h3>Zombie Panic in Wonderland Plus</h3>
+          <p class="italic">Akaoni Studio</p>
+          <a href="https://apps.apple.com/us/app/zombie-panic-in-wonderland-plus/id420870181" target="_blank">App Store</a><br />
+          <a href="https://www.youtube.com/watch?v=CjiPr2f38vc" target="_blank">YouTube Trailer</a>
+          <p>An arcade game where you must get rid of hordes of zombies using your guns, successor to the Wii game Zombier Panic in Wonderland.</p>
+          <p>Worked in the Android port (now delisted) and improvements in the game engine and editor.</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/nongunz1.webp" />
+        </div>
+        <div>
+          <h3>Nongünz</h3>
+          <p class="italic">Brainwash Gang &ndash; Sindicate</p>
+          <a href="https://store.steampowered.com/app/1304780/Nongunz_Doppelganger_Edition/" target="_blank">Steam</a><br />
+          <a href="https://www.youtube.com/watch?v=CQUNLsY01FE" target="_blank">YouTube Trailer</a>
+          <p>An alternative shooting game featuring clicker mechanics and great visual style.</p>
+          <p>Implemented native plugins for the original game engine (Construct 2) to add some unsupported features.</p>
+       </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/toe1.webp" />
+        </div>
+        <div>
+          <h3>Tower of Elements</h3>
+          <p class="italic">Jumble Devs</p>
+          <a href="https://jumbledevs.itch.io/tower-of-elements" target="_blank">Itch.io</a><br />
+          <a href="https://www.microsoft.com/en-us/p/tower-%D0%BEf-elements/9n6616hbqff3?activetab=pivot:overviewtab" target="_blank">Windows Store</a><br />
+          <a href="https://github.com/cegonse/tower-of-elements" target="_blank">Source code</a><br />
+          <a href="https://www.youtube.com/watch?v=jZe02TDtOOM" target="_blank">YouTube Trailer</a>
+          <p>Tower of Elements is a puzzle-platformer that defies you with logic games to overcome the obstacles of this misterious tower. Control the four elements and get to the top!</p>
+          <p>This is the biggest game we developed in the hobbyst studio Jumble Devs, and was a huge learning experience.</p>
+          <p>Developed in Unity3D and released for Android (now delisted), Windows Phone, WebGL and desktop.</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/galaxy2.webp" />
+        </div>
+        <div>
+          <h3>Galaxy Survivor</h3>
+          <p class="italic">Jumble Devs</p>
+          <a href="https://github.com/cegonse/galaxy-survivor" target="_blank">Source code</a><br />
+          <a href="https://www.youtube.com/watch?v=aPMTvU0Bv4A" target="_blank">YouTube Trailer</a>
+          <p>Explore the galaxy, upgrade your ship with better weapons and shields, avoid the asteroid fields and get all the stars!</p>
+                <p>Developed in Unity3D and released for Android (now delisted).</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/rampage2.webp" />
+        </div>
+        <div>
+          <h3>Rampage of Technology #ld36</h3>
+          <p class="italic">&copy; Natalia Morillo, Joan Carles Vegas, César González</p>
+          <a href="https://natnatart.itch.io/rampage-of-technology" target="_blank">Itch.io</a>
+          <p>A mad hipster wants to be the biggest hipster ever and YOU are the next victim! You will play as a cassette, a discman or the legendary Nokia 3310 to run away from the hipster and save your own life!</p>
+          <p>Developed during the #ludumdare36 in Game Boss 2016 for the Ludum Dare 36 in Unity3D</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/ctp1.webp" />
+        </div>
+        <div>
+          <h3>Capture the Pixel</h3>
+          <p class="italic">Jumble Devs</p>
+          <a href="https://github.com/cegonse/galaxy-survivor" target="_blank">Source code</a><br />
+          <p>A free-for-all, overhead multiplayer shooting game. Grab the best weapons and defeat everyone else to get into the top of the ranking.</p>
+          <p>Developed in Unity3D and released for Android (now delisted). Used Photon PUN for real-time networking.</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/spookie.gif" />
+        </div>
+        <div>
+          <h3>Spookie Boogie #globalgamejam2016</h3>
+          <p class="italic">Jumble Devs</p>
+          <a href="https://jumbledevs.itch.io/spookie-boogie" target="_blank">Itch.io</a><br />
+          <a href="https://www.youtube.com/watch?v=VeCvTe8BmEE" target="_blank">YouTube Let's Play</a><br />
+          <a href="https://github.com/cegonse/spookie-boogie" target="_blank">Source code</a>
+          <p>Spookie Boogie is a game in which you help the ghost of Sir Clockengurch, a deceased saxofon player, to kick some teens out of his manor when they summon him from hell using a Ouija board.</p>
+          <p>Developed during the #globalgamejam2016 using Unity3D</p>
+        </div>
+      </article>
+
+      <article>
+        <div style="display: flex; flex-direction: row;">
+          <img src="./images/screenshots/spinnerio1.webp" />
+          <img src="./images/screenshots/spinnerio2.webp" />
+        </div>
+        <div>
+          <h3>Spinner.io</h3>
+          <p class="italic">Commission project</p>
+          <p>A Spinner-fidget IO-like multiplayer game developed during the fidget-spinner craze as a commission for a third party.</p>
+          <p>Developed in Unity3D and released for Android (now delisted). Used Photon PUN for real-time multiplayer.</p>
+        </div>
+      </article>
+
+      <article>
+        <div style="display: flex; flex-direction: row;">
+          <img src="./images/screenshots/social1.webp" />
+          <img src="./images/screenshots/social2.webp" />
+        </div>
+        <div>
+          <h3>Monster Panic</h3>
+          <p class="italic">Akaoni Studio</p>
+          <p>A prototype social game themed around capturing monsters developed during my internship in Akaoni Studio, which was never published.</p>
+          <p>I remember this game fondly as it was the first big scope game I fully programmed by myself, the client was programmed in Unity 3D and it had a custom backend written in C++.</p>
+          <p>Since it was never fully released, I could only keep these screenshots.</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/dcjam.webp" />
+        </div>
+        <div>
+          <h3>DreamCrawler #dcjam2016</h3>
+          <p class="italic">Jumble Devs</p>
+          <a href="https://https://jumbledevs.itch.io/dreamcrawler" target="_blank"><i class="fab fa-itch-io"></i> Itch.io</a><br />
+          <a href="https://github.com/cegonse/dcjam2016" target="_blank"><i class="fab fa-github"></i> Source code</a>
+          <p>A tech demo built with the intention of checking out how complicated the Dreamcast is to develop, along with creating a small framework to keep working over it.</p>
+          <p>Developed during the #dcjam2016 using C and OpenGL</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <img src="./images/screenshots/ctp.gif" />
+        </div>
+        <div>
+          <h3>Capture the Pixel #lowrezjam2016</h3>
+          <p class="italic">Commission project</p>
+          <a href="https://jumbledevs.itch.io/capture-the-pixel" target="_blank">Itch.io</a><br />
+          <a href="https://github.com/cegonse/capture-the-pixel" target="_blank">Source code</a><br />
+          <p>A very low resolution (128x128 pixels) multiplayer shooting arena game, where two teams must get hold of the Pixel before the time runs out.</p>
+          <p>Developed during the #lowrezjam2016, client in Unity3D and server in Node.JS</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="software">
+      <h2>Software</h2>
+      <p>Here you can find a collection of the open source software I have been building on over the years, either on jobs where the products were open source or in my personal time.</p>
+
+      <article>
+        <div>
+          <h3>Cest Framework</h3>
+          <a href="https://cestframework.com/" target="_blank">https://cestframework.com/</a>
+          <p>Cest is a test framework for C++ focused on simplicity and readability, inspired by mainstream frameworks.</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <h3>HPG HMapper</h3>
+          <a href="https://github.com/grev-uv/hpg-hmapper" target="_blank">https://github.com/grev-uv/hpg-hmapper</a>
+          <p>HPG HMapper is a parallel software tool for analyzing DNA hydroxymethylation data, detecting 5hmC bases from BS-seq and TET1 translocation sources.</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <h3>Parallax Terrain Renderer</h3>
+          <a href="https://github.com/cegonse/parallax-terrain-renderer" target="_blank">https://github.com/cegonse/parallax-terrain-renderer</a>
+          <p>A terrain rendering engine using OpenGL 4.3, combining tessellation shaders with displacement mapping techniques.</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <h3>srtm2tiff</h3>
+          <a href="https://github.com/cegonse/srtm2tiff" target="_blank">https://github.com/cegonse/srtm2tiff</a>
+          <p>srtm2tiff is an open-source command line tool to convert NASA HGT files from the Shuttle radar mission to TIFF files.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>Here are the works I got to publish in scientific journals during my university years and while I worked in research.</p>
+
+      <article>
+        <div>
+          <h3>HPG-HMapper: A DNA hydroxymethylation analysis tool</h3>
+          <a href="https://journals.sagepub.com/doi/abs/10.1177/1094342019840792" target="_blank">DOI 10.1177/1094342019840792</a>
+          <p class="italic">The International Journal of High Performance Computing Applications</p>
+          <p>Published January 2020</p>
+          <p>
+            HPG-HMapper is a parallel software tool for analyzing the DNA hmC data obtained by ten-eleven translocation-assisted
+            bisulfite sequencing. This tool takes as input data the output files of mC aligner tools, and it yields mC maps and
+            the accounting of methylated and hydroxymethylated bases on each chromosome.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <h3>On the use of binary trees for DNA hydroxymethylation analysis</h3>
+          <a href="https://link.springer.com/chapter/10.1007/978-3-319-65482-9_37" target="_blank">DOI 10.1007/978-3-319-65482-9_37</a>
+          <p class="italic">International Conference on Algorithms and Architectures for Parallel Processing</p>
+          <p>Published August 2017</p>
+          <p>
+            Introduces how to use binary trees for searching the different occurrences of methylation and hydroxymethylation in DNA samples.
+            The binary trees allow to efficiently store and access the information about the methylation of each methylated/hydroxymethylated
+            cytosines in the samples.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <h3>Combining displacement mapping methods on the GPU for real-time terrain visualization</h3>
+          <a href="https://link.springer.com/article/10.1007/s11227-016-1869-6" target="_blank">DOI 10.1007/s11227-016-1869-6</a>
+          <p class="italic">The Journal of Supercomputing</p>
+          <p>Published January 2017</p>
+          <p>
+            A practical demonstration of how can per-vertex and per-pixel desplacement techniques be combined to improve the perceived
+            visual quality of 3D terrain rendering.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      Thanks for reading!
+    </footer>
+  </body>
+</html>
