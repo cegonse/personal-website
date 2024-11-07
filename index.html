@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <header>
-    <title>César González</title>
+  <head>
+    <meta property="og:title" content="César González Segura - Personal Website">
+    <meta property="og:description" content="My developer personal website and portfolio">
+    <meta property="og:image" content="https://cesargonzalez.dev/photo.webp">
+    <meta property="og:url" content="https://cesargonzalez.dev">
+    <meta name="description" content="César González Segura Personal - Website">
     <meta charset="utf-8"/>
+    <title>César González</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       html {
         color: rgb(236, 233, 230);
         background-color: #1b2733;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 100%;
+      }
+
+      @media (orientation: landscape) {
+        body {
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+
+        article {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          align-content: space-around;
+        }
+      }
+
+      @media (orientation: portrait) {
+        body {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+
+        article {
+          display: flex;
+          flex-direction: column-reverse;
+        }
       }
 
       header {
@@ -26,15 +59,19 @@
       }
 
       @media (orientation: portrait) {
+        header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         header h1 {
-          font-size: 4.5em;
+          font-size: 8vw;
         }
 
         header img {
-          height: 4.5em;
-          width: 4.5em;
+          height: 5em;
+          width: 5em;
           border-radius: 50%;
-          margin-right: 2em;
         }
 
         section h2 {
@@ -42,46 +79,65 @@
         }
 
         p {
-          padding-top: 1em;
-          padding-bottom: 1em;
+          font-size: larger;
         }
+      }
+
+      p {
+        text-align: justify;
       }
 
       a {
-        color: rgb(179, 192, 255);
-        text-decoration: none;
+        color: #758CFF;
+        text-decoration: underline;
       }
 
       a:hover {
-        color: rgb(206, 211, 238);
-        text-decoration: none;
-      }
-
-      @media (orientation: landscape) {
-        body {
-          margin-left: 20%;
-          margin-right: 20%;
-        }
-
-        article {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-        }
+        color: #4D6AFF;
+        text-decoration: underline;
       }
 
       @media (orientation: portrait) {
-        article {
-          padding-top: 2em;
-          padding-bottom: 2em;
+        article img {
+          height: auto;
+          width: min(300px, calc(100vh - 20%));
+          margin-right: 2em;
+          border-radius: 8px;
+        }
+
+        article video {
+          height: auto;
+          width: min(300px, calc(100vh - 20%));
+          margin-right: 2em;
+          border-radius: 8px;
+        }
+
+        article h3 {
+          font-size: 2em;
+        }
+
+        article a {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          display: inline-block;
+          font-size: 1.25em;
         }
       }
 
-      article img {
-        height: 200px;
-        width: auto;
-        margin-right: 2em;
-        border-radius: 8px;
+      @media (orientation: landscape) {
+        article img {
+          height: 200px;
+          width: auto;
+          margin-right: 2em;
+          border-radius: 8px;
+        }
+
+        article video {
+          height: 200px;
+          width: auto;
+          margin-right: 2em;
+          border-radius: 8px;
+        }
       }
 
       .italic {
@@ -105,14 +161,14 @@
 
       @media (orientation: portrait) {
         .contact img {
-          height: 4.5em;
-          margin-right: 3em;
+          height: 48px;
+          margin-right: 24px;
         }
       }
 
       footer {
         width: 100%;
-        height: 4em;
+        height: 3em;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -123,23 +179,23 @@
 
       @media (orientation: portrait) {
         footer {
-          font-size: 3em;
+          font-size: 1.5em;
           border-radius: 32px;
         }
       }
     </style>
-  </header>
+  </head>
   <body>
     <header>
-      <img src="images/photo.webp" />
+      <img src="images/photo.webp" alt="My Picture" />
       <h1>César González Segura</h1>
     </header>
 
     <div class="contact">
-      <a href="https://t.me/cegonse"><img src="images/telegram.webp"></a>
-      <a href="https://www.linkedin.com/in/cesar-gonzalez-segura/"><img src="images/linkedin.webp"></a>
-      <a href="mailto:contact@cesargonzalez.dev"><img src="images/email.webp"></a>
-      <a href="https://github.com/cegonse"><img src="images/github.webp"></a>
+      <a aria-label="Telegram Contact" href="https://t.me/cegonse"><img src="images/telegram.webp" alt="Telegram Logo"></a>
+      <a aria-label="LinkedIn Profile" href="https://www.linkedin.com/in/cesar-gonzalez-segura/"><img src="images/linkedin.webp" alt="LinkedIn Logo"></a>
+      <a aria-label="Email Contact" href="mailto:contact@cesargonzalez.dev"><img src="images/email.webp" alt="Email Symbol"></a>
+      <a aria-label="GitHub Profile" href="https://github.com/cegonse"><img src="images/github.webp" alt="GitHub Logo"></a>
     </div>
 
     <section>
@@ -148,14 +204,16 @@
         Software developer. Experience with clean water hydraulic software, digital banking, videogames,
         mobile communication systems and medical research software.
       </p>
-      <p>If you want to get in touch with me, feel free to reach me in any of the contacts available at the top.</p>
       <p>
-        I love enjoying videogames as a medium, whether it is playing them, creating them or learning about them. In the <a href="#games">games</a> section
+        If you want to get in touch with me, feel free to reach me in any of the contacts available at the top.
+      </p>
+      <p>
+        I love games, be it playing them, creating them or learning about them and about creating them. In the <a href="#games">games</a> section
         you will find details about some of the games I have worked on.
       </p>
       <p>
         Besides my day to day professional work, I am passionate about software crafting and I love to learn in my free time.
-        In the <a href="#software">software</a> section you can see some of the open source projects I have worked on during the years.
+        In the <a href="#software">software</a> section you can see some of the open source projects I have been working on during the years.
       </p>
       <p>
         I also had the chance to do some scientific research at the beginning of my career. If you're curious, you'll find
@@ -170,7 +228,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/ksp1.webp" />
+          <img src="./images/screenshots/ksp1.webp" alt="Screenshot of Kerbal Space Program Enhanced Edition" />
         </div>
         <div>
           <h3>Kerbal Space Program Enhanced Edition</h3>
@@ -186,7 +244,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/zpiw1.webp" />
+          <img src="./images/screenshots/zpiw1.webp" alt="Screenshot of Zombie Panic in Wonderland Plus" />
         </div>
         <div>
           <h3>Zombie Panic in Wonderland Plus</h3>
@@ -200,7 +258,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/nongunz1.webp" />
+          <img src="./images/screenshots/nongunz1.webp" alt="Screenshot of Nongünz" />
         </div>
         <div>
           <h3>Nongünz</h3>
@@ -214,7 +272,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/toe1.webp" />
+          <img src="./images/screenshots/toe1.webp" alt="Screenshot of Tower of Elements" />
         </div>
         <div>
           <h3>Tower of Elements</h3>
@@ -231,7 +289,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/galaxy2.webp" />
+          <img src="./images/screenshots/galaxy2.webp" alt="Screenshot of Galaxy Survivor" />
         </div>
         <div>
           <h3>Galaxy Survivor</h3>
@@ -245,7 +303,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/rampage2.webp" />
+          <img src="./images/screenshots/rampage2.webp" alt="Screenshot of Rampage of Technology" />
         </div>
         <div>
           <h3>Rampage of Technology #ld36</h3>
@@ -258,12 +316,12 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/ctp1.webp" />
+          <img src="./images/screenshots/ctp1.webp" alt="Screenshot of Capture the Pixel" />
         </div>
         <div>
           <h3>Capture the Pixel</h3>
           <p class="italic">Jumble Devs</p>
-          <a href="https://github.com/cegonse/galaxy-survivor" target="_blank">Source code</a><br />
+          <a href="https://github.com/cegonse/capture-the-pixel" target="_blank">Source code</a><br />
           <p>A free-for-all, overhead multiplayer shooting game. Grab the best weapons and defeat everyone else to get into the top of the ranking.</p>
           <p>Developed in Unity3D and released for Android (now delisted). Used Photon PUN for real-time networking.</p>
         </div>
@@ -271,7 +329,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/spookie.gif" />
+          <video src="./images/screenshots/spookie.webm" loop autoplay muted  alt="Video of Spookie Boogie" />
         </div>
         <div>
           <h3>Spookie Boogie #globalgamejam2016</h3>
@@ -285,9 +343,8 @@
       </article>
 
       <article>
-        <div style="display: flex; flex-direction: row;">
-          <img src="./images/screenshots/spinnerio1.webp" />
-          <img src="./images/screenshots/spinnerio2.webp" />
+        <div>
+          <img src="./images/screenshots/spinnerio.webp" alt="Screenshot of Spinner.io" />
         </div>
         <div>
           <h3>Spinner.io</h3>
@@ -298,9 +355,8 @@
       </article>
 
       <article>
-        <div style="display: flex; flex-direction: row;">
-          <img src="./images/screenshots/social1.webp" />
-          <img src="./images/screenshots/social2.webp" />
+        <div>
+          <img src="./images/screenshots/social.webp" alt="Screenshot of Monster Panic" />
         </div>
         <div>
           <h3>Monster Panic</h3>
@@ -313,7 +369,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/dcjam.webp" />
+          <img src="./images/screenshots/dcjam.webp" alt="Screenshot of DreamCrawler" />
         </div>
         <div>
           <h3>DreamCrawler #dcjam2016</h3>
@@ -327,7 +383,7 @@
 
       <article>
         <div>
-          <img src="./images/screenshots/ctp.gif" />
+          <video src="./images/screenshots/ctp.webm" autoplay loop muted alt="Video of Capture the Pixel #lowrezjam2016"></video>
         </div>
         <div>
           <h3>Capture the Pixel #lowrezjam2016</h3>
