@@ -64,22 +64,11 @@
           flex-direction: column;
           align-items: center;
         }
-        header h1 {
-          font-size: 8vw;
-        }
 
         header img {
           height: 5em;
           width: 5em;
           border-radius: 50%;
-        }
-
-        section h2 {
-          font-size: 3em;
-        }
-
-        p {
-          font-size: larger;
         }
       }
 
@@ -112,15 +101,10 @@
           border-radius: 8px;
         }
 
-        article h3 {
-          font-size: 2em;
-        }
-
         article a {
           padding-top: 8px;
           padding-bottom: 8px;
           display: inline-block;
-          font-size: 1.25em;
         }
       }
 
@@ -160,9 +144,12 @@
       }
 
       @media (orientation: portrait) {
+        .contact {
+          justify-content: space-around;
+        }
+
         .contact img {
           height: 48px;
-          margin-right: 24px;
         }
       }
 
